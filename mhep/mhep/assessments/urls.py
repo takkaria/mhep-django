@@ -54,49 +54,49 @@ urlpatterns = [
         name="subview-javascript",
     ),
 
-    path(
-        "api/v1/assessments/",
-        view=ListCreateAssessments.as_view(),
-        name="list-create-assessments"
-    ),
-    path(
-        "api/v1/assessments/<int:pk>/",
-        view=RetrieveUpdateDestroyAssessment.as_view(),
-        name="retrieve-update-destroy-assessment",
-    ),
+    # path(
+    #     "api/v1/assessments/",
+    #     view=ListCreateAssessments.as_view(),
+    #     name="list-create-assessments"
+    # ),
+    # path(
+    #     "api/v1/assessments/<int:pk>/",
+    #     view=RetrieveUpdateDestroyAssessment.as_view(),
+    #     name="retrieve-update-destroy-assessment",
+    # ),
 
-    path(
-        "api/v1/libraries/",
-        view=ListCreateLibraries.as_view(),
-        name="list-create-libraries"
-    ),
+    # path(
+    #     "api/v1/libraries/",
+    #     view=ListCreateLibraries.as_view(),
+    #     name="list-create-libraries"
+    # ),
 
-    path(
-        "api/v1/libraries/<int:pk>/",
-        view=UpdateDestroyLibrary.as_view(),
-        name="update-destroy-library"
-    ),
+    # path(
+    #     "api/v1/libraries/<int:pk>/",
+    #     view=UpdateDestroyLibrary.as_view(),
+    #     name="update-destroy-library"
+    # ),
 
-    path(
-        "api/v1/organisations/",
-        view=ListOrganisations.as_view(),
-        name="list-organisations"
-    ),
-    path(
-        "api/v1/organisations/<int:pk>/assessments/",
-        view=ListCreateOrganisationAssessments.as_view(),
-        name="list-create-organisation-assessments"
-    ),
+    # path(
+    #     "api/v1/organisations/",
+    #     view=ListOrganisations.as_view(),
+    #     name="list-organisations"
+    # ),
+    # path(
+    #     "api/v1/organisations/<int:pk>/assessments/",
+    #     view=ListCreateOrganisationAssessments.as_view(),
+    #     name="list-create-organisation-assessments"
+    # ),
 
-    path(
-        "api/v1/libraries/<int:pk>/items/",
-        view=CreateUpdateDeleteLibraryItem.as_view(),
-        name="create-update-delete-library-item"
-    ),
+    # path(
+    #     "api/v1/libraries/<int:pk>/items/",
+    #     view=CreateUpdateDeleteLibraryItem.as_view(),
+    #     name="create-update-delete-library-item"
+    # ),
 
-    path(
-        "api/v1/libraries/<int:pk>/items/<str:tag>/",
-        view=CreateUpdateDeleteLibraryItem.as_view(),
-        name="create-update-delete-library-item"
-    ),
+    # path(
+    #     "api/v1/libraries/<int:pk>/items/<str:tag>/",
+    #     view=CreateUpdateDeleteLibraryItem.as_view(),
+    #     name="create-update-delete-library-item"
+    # ),
 ]
